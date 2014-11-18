@@ -19,10 +19,7 @@ body > section{
 #slide-1 .bcg {
   height: 100%;
   width: 100%;
-  background-image: url('http://ihatetomatoes.net/merry-christmallax/img/bcg_paper.png');
-  background-repeat: repeat;
-  background-position: center top;
-  background-attachment: fixed;
+  background-color: #000;
 }
             
 #scrollBaby {
