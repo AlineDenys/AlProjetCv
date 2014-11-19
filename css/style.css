@@ -14,6 +14,14 @@
   src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcjvw3iLehEZ8Hqbhfrhp4xo.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+/* FONT REGULAR */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 
 /* GENERAL */
@@ -29,7 +37,7 @@ body > section{
 }
 
 /* STYLE TITRES */
-h1{
+h1 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 85px;
@@ -47,39 +55,57 @@ h1{
     z-index: 9999;
 }
 
-/* SLIDE 1 */
-#intro {
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
+/* DIV TARGET */
+#intro, #profil {
   text-align: center;
 }
-            
-#scroll {
-    position: fixed;
-    bottom: 200px;
-    left: 0;
-    right: 0;
-}
 
+/* SLIDE 1 : INTRO */
 #scroll,#hello{
     display:none;
 }
-
 #introHello{
-    top: 300px;
+    top: 40%;
     position: fixed;
     left: 0;
     right: 0;
 }
+#introScroll {
+    position: fixed;
+    top:80%;
+    left: 0;
+    right: 0;
+}
 
-/* SLIDE 2 */
+/* SLIDE 2 : PROFIL */
 #profilBcg {
-  height: 100%;
-  width: 100%;
-background-color: green;
-  text-align: center;
-        position:fixed;
-
+    height: 100%;
+    width: 100%;
+    background: url("../img/01.jpg") no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    text-align: center;
+    position:fixed;
     bottom:0;
 }
+
+#because{
+    position: fixed;
+    left:0;
+    right: 0;
+}
+#triangle1, #triangle2{
+    font-family: 'Parisienne', cursive;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background:#fff;
+    border-radius:50%;
+    padding-top: 60px;
+
+}
+
+#triangle1{left:50%;right:50%;top:30%;}
+#triangle2{left:50%;right:50%;margin-left:-400px;top:30%;}
