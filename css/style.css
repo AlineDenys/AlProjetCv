@@ -96,8 +96,8 @@ h1 {
     left:0;
     right: 0;
 }
-#triangle1, #triangle2{
-    font-family: 'Parisienne', cursive;
+#rond1, #rond2, #rond3, #rond4{
+    font-family: 'Clicker Script', cursive;
     position: fixed;
     width: 200px;
     height: 200px;
@@ -107,5 +107,16 @@ h1 {
 
 }
 
-#triangle1{left:50%;right:50%;top:30%;}
-#triangle2{left:50%;right:50%;margin-left:-400px;top:30%;}
+#rond1{left:50%;right:50%;    top:30%;}
+#rond2{left:50%;right:50%;margin-left:-400px;    top:30%;}
+#rond3{left:50%;right:50%;margin-left:-200px;    top:40%;}
+#rond4{left:50%;right:50%;margin-left:200px;    top:40%;}
+
+/*#photo {
+    height: 100%;
+    width: 100%;
+    background: url("../img/photo.png") repeat-x center fixed; 
+    text-align: center;
+    position:fixed;
+    top:30%;
+}*/
