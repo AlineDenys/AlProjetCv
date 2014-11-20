@@ -46,11 +46,11 @@
             <!-- BARRE PROFIL -->
             <div id="profilBarre" data-380="top:115%;opacity:1;" data-900="opacity:1;top:0px;" data-820="top:0px;" data-1100="top:0px;" data-anchor-target="#profil" >
             <ul>
-                <li id="famille"><a href=""><i class="fa fa-male fa-3x"></i><i class="fa fa-female fa-3x"></i><i class="fa fa-child fa-2x"></i></a><div id="pulse"></div></li>
-                <li id="anniv"><a href=""><i class="fa fa-birthday-cake fa-3x"></i></a><div id="pulse"></div></li>
-                <li id="voiture"><a href=""><i class="fa fa-car fa-3x"></i></a><div id="pulse"></div></li>
-                <li id="origine"><a href=""><i class="fa fa-anchor fa-3x"></i></a><div id="pulse"></div></li>
-                <li id="ville"><a href=""><i class="fa fa-map-marker fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="famille" onmouseover="affiche('maman');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'maman')"><a href=""><i class="fa fa-male fa-3x"></i><i class="fa fa-female fa-3x"></i><i class="fa fa-child fa-2x"></i></a><div id="pulse"></div></li>
+                <li id="anniv"  onmouseover="affiche('anniversaire');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'anniversaire')"><a href=""><i class="fa fa-birthday-cake fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="voiture"  onmouseover="affiche('permis');cache(event,'devoile')" onmouseout="cache(event,'permis');affiche('devoile')"><a href=""><i class="fa fa-car fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="origine"  onmouseover="affiche('nord');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'nord')"><a href=""><i class="fa fa-anchor fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="ville"  onmouseover="affiche('decines');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'decines')"><a href=""><i class="fa fa-map-marker fa-3x"></i></a><div id="pulse"></div></li>
             </ul>
             </div>
             
@@ -58,13 +58,13 @@
             <div id="fondProfil" data-500="top:100%;" data-850="top:0%;" data-anchor-target="#profil" >
                  <!-- TEXTES PROFIL -->            
                 <div id="textesProfil" data-700="opacity:0;top:0%" data-850="opacity:1;top:40%;" data-anchor-target="#profil">
-                    <h2>Je</h2>
-                    <div id="devoile"><h3>... me dévoile </h3><h2>au rollover !</h2></div>
-                    <div id="famille" ><h3>... suis en </h3><h2>concubinage et maman d'un petit garçon</h2></div>
-                    <div id="anniv" ><h3>... vais bientôt fêter </h3><h2>mes 27 ans, le 28 Janvier 1988</h2></div>
-                    <div id="voiture" ><h3>... possède le </h3><h2>permis B et voiture</h2></div>
-                    <div id="origine" ><h3>... suis </h3><h2>native de Dunkerque dans le Nord</h2></div>
-                    <div id="ville" ><h3>... viens de m'installer à</h3><h2>Décines Charpieu, Rhône</h2></div>
+                    <h2>Je<br/></h2>
+                    <div id="devoile"><h3>... me dévoile au </h3><h2>rollover !</h2></div>
+                    <div id="maman" ><h3>... suis en </h3><h2>concubinage</h2><h3> et maman d'un petit </h3><h2>garçon</h2></div>
+                    <div id="anniversaire" ><h3>... vais bientôt fêter mes </h3><h2>27 ans</h2><h3>, le 28 Janvier</h3></div>
+                    <div id="permis" ><h3>... possède le </h3><h2>permis B</h2><h3> et une </h3><h2>voiture</h2></div>
+                    <div id="nord" ><h3>... suis native de </h3><h2>Dunkerque</h2><h3> dans le Nord</h3></div>
+                    <div id="decines" ><h3>... viens de m'installer à </h3><h2>Décines Charpieu</h2><h3>, près de </h3><h2>Lyon</h2></div>
                 </div>
             </div>
         </section> 
@@ -116,6 +116,24 @@
      $("#scroll").fadeIn("slow");
      $("#hello").fadeIn("slow");
       });
+            
+function affiche(id) {
+document.getElementById(id).style.display = 'inline';
+document.getElementById("fondProfil").style.backgroundImage='url("img/'+id+'.jpg")';
+}
+function cache(e,id) {
+  var relTarg = e.relatedTarget || e.toElement;
+  if(!isChildOf(relTarg,document.getElementById('conteneur'))) {
+    document.getElementById(id).style.display = 'none';
+  }
+}
+function isChildOf(child,par) {
+  while(child!=document) {
+    if(child==par) { return true; }
+    child = child.parentNode;
+  }
+  return false;
+}
       </script>
 
     </body>
