@@ -23,6 +23,25 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+/* EFFET PULSE ICONES */
+@-webkit-keyframes pulse 
+  {       
+    0% {-webkit-transform: scale(0); opacity: 0;}
+    8% {-webkit-transform: scale(0); opacity: 0;}
+    15% {-webkit-transform: scale(0.7); opacity: 0.2;}
+    30% {-webkit-transform: scale(0.8); opacity: 0.5;}
+    100% {opacity: 0; -webkit-transform: scale(1);}
+  }
+
+  @-moz-keyframes pulse 
+  {       
+    0% {-moz-transform: scale(0); opacity: 0;}
+    8% {-moz-transform: scale(0); opacity: 0;}
+    15% {-moz-transform: scale(0.7); opacity: 0.2;}
+    30% {-moz-transform: scale(0.8); opacity: 0.5;}
+    100% {opacity: 0; -moz-transform: scale(1);}
+  }
+
 
 /* GENERAL */
 body{
@@ -85,6 +104,7 @@ h3{
 }
 #profil{
     z-index:2;
+    position:absolute;
 }
 
 /* SLIDE 1 : INTRO */
@@ -165,7 +185,7 @@ background: url("../img/dunkerque.jpg") no-repeat center fixed;
     text-align: center;
     position:fixed;
     bottom:0;
-    z-index:3;
+    z-index:2;
 }
 
 /* SLIDE 3 : PROFIL */
@@ -189,8 +209,6 @@ background-color:#fff;
  
 }
 #profilBarre ul li .fa{ color: black; }
-
-
 
 #profilBarre ul li .fa:hover {
 color: black;
@@ -220,31 +238,6 @@ background: url("../img/devoile.jpg") no-repeat center fixed;
 #textesProfil #maman,#textesProfil #anniversaire,#textesProfil #permis,#textesProfil #nord,#textesProfil #decines{
 display: none;
 }
-
-
-
-
-
-
-
-
-@-webkit-keyframes pulse 
-  {       
-    0% {-webkit-transform: scale(0); opacity: 0;}
-    8% {-webkit-transform: scale(0); opacity: 0;}
-    15% {-webkit-transform: scale(0.7); opacity: 0.2;}
-    30% {-webkit-transform: scale(0.8); opacity: 0.5;}
-    100% {opacity: 0; -webkit-transform: scale(1);}
-  }
-
-  @-moz-keyframes pulse 
-  {       
-    0% {-moz-transform: scale(0); opacity: 0;}
-    8% {-moz-transform: scale(0); opacity: 0;}
-    15% {-moz-transform: scale(0.7); opacity: 0.2;}
-    30% {-moz-transform: scale(0.8); opacity: 0.5;}
-    100% {opacity: 0; -moz-transform: scale(1);}
-  }
   
  #profilBarre ul li #pulse
   {
@@ -269,4 +262,3 @@ display: none;
     -webkit-animation-play-state: paused; 
     animation-play-state: paused;
  }
-
