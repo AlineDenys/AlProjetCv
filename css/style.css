@@ -43,6 +43,12 @@ h1 {
     font-size: 85px;
     font-weight: 700;
 }
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
 
 /* INFO SCROLLR */
 #info{
@@ -60,7 +66,35 @@ h1 {
   text-align: center;
 }
 
+/* Z INDEX */
+#introHello {
+  z-index: 9999;
+}
+#intro{
+    z-index:1;
+}
+#profil{
+    z-index:2;
+}
+
 /* SLIDE 1 : INTRO */
+#introPhoto {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    background: url("../img/01.jpg") no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    text-align: center;
+    position:fixed;
+}
+
 #scroll,#hello{
     display:none;
 }
@@ -77,46 +111,56 @@ h1 {
     right: 0;
 }
 
-/* SLIDE 2 : PROFIL */
-#profilBcg {
+
+
+/* SLIDE 2 : REGARDE EN BAS */
+#regardeEnBasPhoto {
+    background: url("../img/02.jpg") no-repeat center fixed; 
+}
+#regardeEnBasPhoto2 {
+    background: url("../img/03.jpg") no-repeat center fixed; 
+}
+#profilPhoto {
+    background: url("../img/04.jpg") no-repeat center fixed; 
+}
+#profilPhoto2 {
+    background: url("../img/05.jpg") no-repeat center fixed; 
+}
+#profilPhoto3 {
+    background: url("../img/06.jpg") no-repeat center fixed; 
+}
+#profilPhoto4 {
+    background: url("../img/07.jpg") no-repeat center fixed; 
+}
+
+
+
+
+
+
+/* BASE PHOTOS BACKGROUND */ 
+#regardeEnBasPhoto, #regardeEnBasPhoto2, #profilPhoto, #profilPhoto2, #profilPhoto3, #profilPhoto4 {
+    top:0;
     height: 100%;
     width: 100%;
-    background: url("../img/01.jpg") no-repeat center fixed; 
     -webkit-background-size: cover; /* pour Chrome et Safari */
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */
     background-size: cover; /* version standardisée */
     text-align: center;
     position:fixed;
-    bottom:0;
 }
 
-#because{
+
+/* SLIDE 3 : PROFIL */
+#profilNom{
+    top:20%;
+}
+#feuille{
     position: fixed;
-    left:0;
-    right: 0;
+    left: 50%;
+    right: 50%;
+    top:20%;
+    width: 500px;
+    margin-left: -350px;
 }
-#rond1, #rond2, #rond3, #rond4{
-    font-family: 'Clicker Script', cursive;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    background:#fff;
-    border-radius:50%;
-    padding-top: 60px;
-
-}
-
-#rond1{left:50%;right:50%;    top:30%;}
-#rond2{left:50%;right:50%;margin-left:-400px;    top:30%;}
-#rond3{left:50%;right:50%;margin-left:-200px;    top:40%;}
-#rond4{left:50%;right:50%;margin-left:200px;    top:40%;}
-
-/*#photo {
-    height: 100%;
-    width: 100%;
-    background: url("../img/photo.png") repeat-x center fixed; 
-    text-align: center;
-    position:fixed;
-    top:30%;
-}*/
