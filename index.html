@@ -26,7 +26,7 @@
             <div id="introPhoto" data-400="opacity:0;-webkit-filter: blur(0px);-moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);" data-500="opacity:1;-webkit-filter: blur(0px);-moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);"></div>
             
             <!-- TEXTE INTRO -->            
-            <div id="introHello" data-0="opacity:1;top:40%" data-300="opacity:0;top:0px;" data-anchor-target="#intro">
+            <div id="introHello" data-0="opacity:1;top:40%;display:block;" data-300="opacity:0;top:0%;" data-350="display:none;" data-anchor-target="#intro">
                 <h1 id="hello" >Hello world !</h1>
             </div>
             <div id="introScroll" data-0="opacity:1;" data-100="opacity:0;"
@@ -36,19 +36,42 @@
                     
         </section>
         
+        <section id="dunkerque">
+            <!-- FOND DUNKERQUE -->
+            <div id="dunkerqueBarre" data-300="top:100%;background-position:50% 0px;" data-900="top:-50%;background-position:50% -200px;"  data-anchor-target="#dunkerque" >
+          
+        </section>
+            
         <section id="profil">
-            <div id="profilPhoto" data-500="opacity:0;" data-550="opacity:1;"></div>
-            <div id="profilPhoto2" data-550="opacity:0;" data-600="opacity:1;"></div>
-            <div id="profilPhoto3" data-650="opacity:0;" data-700="opacity:1;"></div>
-            <div id="profilPhoto4" data-750="opacity:0;" data-800="opacity:1;"></div>
+            <!-- BARRE PROFIL -->
+            <div id="profilBarre" data-380="top:115%;opacity:1;" data-900="opacity:1;top:0px;" data-820="top:0px;" data-1100="top:0px;" data-anchor-target="#profil" >
+            <ul>
+                <li id="famille"><a href=""><i class="fa fa-male fa-3x"></i><i class="fa fa-female fa-3x"></i><i class="fa fa-child fa-2x"></i></a><div id="pulse"></div></li>
+                <li id="anniv"><a href=""><i class="fa fa-birthday-cake fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="voiture"><a href=""><i class="fa fa-car fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="origine"><a href=""><i class="fa fa-anchor fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="ville"><a href=""><i class="fa fa-map-marker fa-3x"></i></a><div id="pulse"></div></li>
+            </ul>
+            </div>
             
-            
-            <!-- TEXTE INTRO -->            
-            <div id="feuille">
-                <div id="profilNom" data-800="opacity:0;" data-900="opacity:1;" data-anchor-target="#profil">
-                <h2 id="nom" >Bienvenue sur mon cv en ligne !</h2>
+            <!-- FOND PROFIL -->
+            <div id="fondProfil" data-500="top:100%;" data-850="top:0%;" data-anchor-target="#profil" >
+                 <!-- TEXTES PROFIL -->            
+                <div id="textesProfil" data-700="opacity:0;top:0%" data-850="opacity:1;top:40%;" data-anchor-target="#profil">
+                    <h2>Je</h2>
+                    <div id="devoile"><h3>... me dévoile </h3><h2>au rollover !</h2></div>
+                    <div id="famille" ><h3>... suis en </h3><h2>concubinage et maman d'un petit garçon</h2></div>
+                    <div id="anniv" ><h3>... vais bientôt fêter </h3><h2>mes 27 ans, le 28 Janvier 1988</h2></div>
+                    <div id="voiture" ><h3>... possède le </h3><h2>permis B et voiture</h2></div>
+                    <div id="origine" ><h3>... suis </h3><h2>native de Dunkerque dans le Nord</h2></div>
+                    <div id="ville" ><h3>... viens de m'installer à</h3><h2>Décines Charpieu, Rhône</h2></div>
                 </div>
             </div>
+        </section> 
+        
+        <section id="parcours">
+            <!-- FOND PARCOURS -->
+            
         </section>
 
         
