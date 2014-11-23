@@ -285,3 +285,41 @@ border-width: 0 50px 50px 50px;
 border-color: transparent transparent #ffffff transparent;
         margin-left: -50px;
 }
+
+#traitBac{
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    width: 130px;
+    height: 33px;
+    background: url("../img/traits.png") ; 
+}
+
+#traitBac{
+    top:80%;
+    margin-left: -150px;
+}
+
+#iconesParcours{
+    position:fixed;
+    top:0;
+}
+
+#iconesParcours ul{
+    padding-top:60px;
+    text-align: center;
+    margin-left: -35px;
+}
+#iconesParcours ul li {
+        position:fixed;
+    display: block;
+    cursor: pointer;
+	margin: 20px 20px;
+    width: 50px;
+    
+}
+#iconesParcours ul li .fa{ color: black; }
+
+#iconesParcours ul li .fa:hover {
+color: pink;
+}
