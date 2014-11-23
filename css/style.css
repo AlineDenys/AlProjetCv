@@ -72,11 +72,15 @@ h2 {
 }
 h3{
     font-family: 'Clicker Script', sans-serif;
-
     font-size: 40px;
     font-weight: 0;
     display: inline;
 
+}
+.date{
+    font-family: 'Gloria Hallelujah', sans-serif;
+    color:white;
+    font-size: 18px;
 }
 
 /* INFO SCROLLR */
@@ -176,7 +180,7 @@ h3{
 #dunkerqueBarre{
     height: 300px;
     width: 100%;
-background: url("../img/dunkerque.jpg") no-repeat center fixed; 
+    background: url("../img/dunkerque.jpg") no-repeat center fixed; 
      -webkit-background-size: cover; /* pour Chrome et Safari */
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */
@@ -207,17 +211,19 @@ background-color:#fff;
 	margin: 20px 20px;
  
 }
-#profilBarre ul li .fa{ color: black; }
+#profilBarre ul li .fa{ 
+    color: black; 
+}
 
 #profilBarre ul li .fa:hover {
-color: black;
+    color: black;
 }
 
 #fondProfil{
     height: 100%;
     width: 100%;
-background: url("../img/devoile.jpg") no-repeat center fixed; 
-     -webkit-background-size: cover; /* pour Chrome et Safari */
+    background: url("../img/devoile.jpg") no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour Chrome et Safari */
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */
     background-size: cover; /* version standardisée */
@@ -235,7 +241,7 @@ background: url("../img/devoile.jpg") no-repeat center fixed;
     z-index: 1;
 }
 #textesProfil #maman,#textesProfil #anniversaire,#textesProfil #permis,#textesProfil #nord,#textesProfil #decines{
-display: none;
+    display: none;
 }
   
  #profilBarre ul li #pulse
@@ -257,7 +263,7 @@ display: none;
     -moz-animation: pulse 2s linear infinite; 
   }
 
- #profilBarre ul li #pulse:hover{  
+#profilBarre ul li #pulse:hover{  
     -webkit-animation-play-state: paused; 
     animation-play-state: paused;
  }
@@ -274,52 +280,121 @@ display: none;
 }
 
 #triangleParcours{
-        top: 0%;
+     top: 0%;
     position: fixed;
     left: 50%;
     right: 50%;
-   width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 50px 50px 50px;
-border-color: transparent transparent #ffffff transparent;
-        margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 50px;
+    border-color: transparent transparent #ffffff transparent;
+    margin-left: -50px;
 }
 
-#traitBac{
+#bacParcours{
     position: fixed;
-    left: 50%;
-    right: 50%;
-    width: 130px;
-    height: 33px;
-    background: url("../img/traits.png") ; 
+    left: 0;
+    width: 48%;
+    background: url("../img/traits.png") no-repeat right top; 
+    top:70%;
+    padding-left: 50px;
+    padding-right: 130px;
+    display: none;
+    text-align: right;
 }
-
-#traitBac{
-    top:80%;
-    margin-left: -150px;
+#btsParcours{
+    position: fixed;
+    right: 0;
+    width: 48%;
+    background: url("../img/traits2.png") no-repeat left top; 
+    top:60%;
+    padding-left: 130px;
+    padding-right: 50px;
+    display: none;
+}
+#horizonParcours{
+    position: fixed;
+    left: 0;
+    width: 48%;
+    background: url("../img/traits.png") no-repeat right top; 
+    top:56%;
+    padding-left: 50px;
+    padding-right: 130px;
+    display: none;
+    text-align: right;
+}
+#imagisParcours{
+    position: fixed;
+    right: 0;
+    width: 48%;
+    background: url("../img/traits2.png") no-repeat left top; 
+    top:35%;
+    padding-left: 130px;
+    padding-right: 50px;
+    display: none;
+}
+#maisonParcours{
+    position: fixed;
+    left: 0;
+    width: 48%;
+    background: url("../img/traits.png") no-repeat right top; 
+    top:30%;
+    padding-left: 50px;
+    padding-right: 130px;
+    display: none;
+    text-align: right;
+}
+#hopitalParcours{
+    position: fixed;
+    right: 0;
+    width: 48%;
+    background: url("../img/traits2.png") no-repeat left top; 
+    top:21%;
+    padding-left: 130px;
+    padding-right: 50px;
+    display: none;
+}
+#certificatsParcours{
+    position: fixed;
+    left: 0;
+    width: 48%;
+    background: url("../img/traits.png") no-repeat right top; 
+    top:9.5%;
+    padding-left: 50px;
+    padding-right: 130px;
+    display: none;
+    text-align: right;
+}
+#certificatsParcours .fa{
+    color:white;
 }
 
 #iconesParcours{
     position:fixed;
     top:0;
+
 }
 
 #iconesParcours ul{
     padding-top:60px;
     text-align: center;
     margin-left: -35px;
+    
+
+
 }
 #iconesParcours ul li {
-        position:fixed;
+    position:fixed;
     display: block;
     cursor: pointer;
 	margin: 20px 20px;
     width: 50px;
+
     
 }
-#iconesParcours ul li .fa{ color: black; }
+#iconesParcours ul li .fa{ color: black;}
 
 #iconesParcours ul li .fa:hover {
-color: pink;
+    color: pink;
 }

@@ -8,6 +8,7 @@
         
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" href="css/style.css">
      </head>
@@ -46,11 +47,11 @@
             <!-- BARRE PROFIL -->
             <div id="profilBarre" data-380="top:110%;opacity:1;" data-900="opacity:1;top:0px;" data-820="top:0px;" data-1000="top:0px;display:inline;opacity:1;" data-1050="top:0%;opacity:0;display:none;" data-anchor-target="#profil" >
             <ul>
-                <li id="famille" onmouseover="affiche('maman');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'maman')"><a href=""><i class="fa fa-male fa-3x"></i><i class="fa fa-female fa-3x"></i><i class="fa fa-child fa-2x"></i></a><div id="pulse"></div></li>
-                <li id="anniv"  onmouseover="affiche('anniversaire');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'anniversaire')"><a href=""><i class="fa fa-birthday-cake fa-3x"></i></a><div id="pulse"></div></li>
-                <li id="voiture"  onmouseover="affiche('permis');cache(event,'devoile')" onmouseout="cache(event,'permis');affiche('devoile')"><a href=""><i class="fa fa-car fa-3x"></i></a><div id="pulse"></div></li>
-                <li id="origine"  onmouseover="affiche('nord');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'nord')"><a href=""><i class="fa fa-anchor fa-3x"></i></a><div id="pulse"></div></li>
-                <li id="ville"  onmouseover="affiche('decines');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'decines')"><a href=""><i class="fa fa-map-marker fa-3x"></i></a><div id="pulse"></div></li>
+                <li id="famille" onmouseover="affiche('maman');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'maman')"><i class="fa fa-male fa-3x"></i><i class="fa fa-female fa-3x"></i><i class="fa fa-child fa-2x"></i><div id="pulse"></div></li>
+                <li id="anniv"  onmouseover="affiche('anniversaire');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'anniversaire')"><i class="fa fa-birthday-cake fa-3x"></i><div id="pulse"></div></li>
+                <li id="voiture"  onmouseover="affiche('permis');cache(event,'devoile')" onmouseout="cache(event,'permis');affiche('devoile')"><i class="fa fa-car fa-3x"></i><div id="pulse"></div></li>
+                <li id="origine"  onmouseover="affiche('nord');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'nord')"><i class="fa fa-anchor fa-3x"></i><div id="pulse"></div></li>
+                <li id="ville"  onmouseover="affiche('decines');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'decines')"><i class="fa fa-map-marker fa-3x"></i><div id="pulse"></div></li>
             </ul>
             </div>
             
@@ -79,13 +80,13 @@
             
                  <div id="iconesParcours">
                     <ul>
-                        <li id="maison" data-1700="top:0%;opacity:0;" data-2200="top:10%;opacity:1;" data-anchor-target="#parcours"><a href=""><i class="fa fa-certificate fa-3x"></i></a></li>
-                        <li id="hopital" data-1700="top:0%;opacity:0;" data-2100="top:20%;opacity:1;" data-anchor-target="#parcours"><a href=""><i class="fa fa-hospital-o fa-3x"></i></a></li>
-                        <li id="maison" data-1700="top:0%;opacity:0;" data-2000="top:30%;opacity:1;" data-anchor-target="#parcours"><a href=""><i class="fa fa-home fa-3x"></i></a></li>
-                        <li id="imagis" data-1700="top:0%;opacity:0;" data-1900="top:35%;opacity:1;" data-anchor-target="#parcours"><a href=""><i class="fa fa-briefcase fa-3x"></i></a></li>
-                        <li id="horizon" data-1700="top:0%;opacity:0;" data-1800="top:55%;opacity:1;" data-anchor-target="#parcours"><a href=""><i class="fa fa-suitcase fa-3x"></i></a></li>
-                        <li id="bts" data-1600="top:0%;opacity:0;" data-1700="top:60%;opacity:1;" data-anchor-target="#parcours"><a href=""><i class="fa fa-university fa-3x"></i></a></li>
-                        <li id="bac" data-1500="top:0%;opacity:0;" data-1600="top:70%;opacity:1;" data-anchor-target="#parcours"><a href=""><i class="fa fa-graduation-cap fa-3x"></i></a></li>
+                        <li id="certificats" data-1700="top:0%;opacity:0;" data-2200="top:10%;opacity:1;" data-anchor-target="#parcours" onmouseover="afficheSimple('certificatsParcours');" ><i class="fa fa-laptop fa-3x"></i></li>
+                        <li id="hopital" data-1700="top:0%;opacity:0;" data-2100="top:20%;opacity:1;" data-anchor-target="#parcours" onmouseover="afficheSimple('hopitalParcours');"><i class="fa fa-hospital-o fa-3x"></i></li>
+                        <li id="maison" data-1700="top:0%;opacity:0;" data-2000="top:29%;opacity:1;" data-anchor-target="#parcours" onmouseover="afficheSimple('maisonParcours');"><i class="fa fa-home fa-3x"></i></li>
+                        <li id="imagis" data-1700="top:0%;opacity:0;" data-1900="top:35%;opacity:1;" data-anchor-target="#parcours" onmouseover="afficheSimple('imagisParcours');"><i class="fa fa-briefcase fa-3x"></i></li>
+                        <li id="horizon" data-1700="top:0%;opacity:0;" data-1800="top:55%;opacity:1;" data-anchor-target="#parcours" onmouseover="afficheSimple('horizonParcours');"><i class="fa fa-suitcase fa-3x"></i></li>
+                        <li id="bts" data-1600="top:0%;opacity:0;" data-1700="top:60%;opacity:1;" data-anchor-target="#parcours" onmouseover="afficheSimple('btsParcours');"><i class="fa fa-university fa-3x"></i></li>
+                        <li id="bac" data-1500="top:0%;opacity:0;" data-1600="top:70%;opacity:1;" data-anchor-target="#parcours" onmouseover="afficheSimple('bacParcours');"><i class="fa fa-graduation-cap fa-3x"></i></li>
                         
                     </ul>
                 </div>
@@ -93,13 +94,38 @@
             
             </div>
             
-            <!-- TEXTES PARCOURS 
-            <div id="textesParcours" data-1500="opacity:0;" data-1600="opacity:1;" data-anchor-target="#parcours" >
-                <div id="bacParcours">
-                    <div id="traitBac"></div>
-                    <div id="textesBac">Baccalauréat Scientifique</div>
+            <!-- TEXTES PARCOURS  -->
+            <div id="textesParcours" data-0="display:none;"
+                 data-2200="display:block;" data-2500="display:none;">
+                <div id="bacParcours" >
+                    <h2>Baccalauréat Scientifique</h2>
+                    <p class="date">Obtenu en 2007 | Lycée Jean Bart à Dunkerque</p>
                 </div>
-            </div> -->
+                <div id="btsParcours" >
+                    <h2>BTS Informatique de Gestion</h2>
+                    <p class="date">Obtenu en 2009 | Lycée Jean Bart à Dunkerque</p>
+                </div>
+                <div id="horizonParcours" >
+                    <h2>Horizon Marketing</h2>
+                    <p class="date">De Janvier 2009 à Janvier 2012 | Développeur web</p>
+                </div>
+                <div id="imagisParcours" >
+                    <h2>Imagis Communication</h2>
+                    <p class="date">De Janvier 2012 à Avril 2012 | Développeur web</p>
+                </div>
+                <div id="maisonParcours" >
+                    <h2>Naissance de mon petit garçon</h2>
+                    <p class="date">20 Avril 2012 | Hugo est âgé maintenant de 2 ans et demi</p>
+                </div>
+                <div id="hopitalParcours" >
+                    <h2>Opération du bypass</h2>
+                    <p class="date">Septembre 2013 | Perte de poids de 70kg</p>
+                </div>
+                <div id="certificatsParcours" >
+                    <h2>Certificats OpenClassrooms</h2>
+                    <p class="date">Novembre 2014 | Symfony 2 <a href="http://certifications.openclassrooms.com/OC-51674918" target="_blank"><i class="fa fa-external-link fa-1x"></i></a> + HTML5/CSS3 <a href="http://certifications.openclassrooms.com/OC-358943908" target="_blank"><i class="fa fa-external-link fa-1x"></i></a> + GIT <a href="http://certifications.openclassrooms.com/OC-424157157" target="_blank"><i class="fa fa-external-link fa-1x"></i></a></p>
+                </div>
+            </div>
             
                 
                
@@ -107,7 +133,7 @@
     
         
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+        
     	<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" >
@@ -124,7 +150,9 @@
      $("#scroll").fadeIn("slow");
      $("#hello").fadeIn("slow");
       });
-            
+function afficheSimple(id) {
+document.getElementById(id).style.display = 'inline';
+}            
 function affiche(id) {
 document.getElementById(id).style.display = 'inline';
 document.getElementById("fondProfil").style.backgroundImage='url("img/'+id+'.jpg")';
