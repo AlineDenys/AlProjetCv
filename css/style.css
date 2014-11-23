@@ -399,3 +399,38 @@ background-color:#fff;
 #iconesParcours ul li .fa:hover {
     color: pink;
 }
+
+
+
+/* SLIDE 4 : COMPETENCES */
+.integrateurBarre{
+    height: 100%;
+    width: 100%;
+  background-color: pink;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    z-index:1;
+}
+#integrateurTexte,#developpeurTexte{
+    padding-top: 90px;
+    width: 100%;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    z-index:2;
+    color:black;
+}
+#photoBarre{
+    height: 33%;
+    width: 100%;
+    background: url("../img/01.jpg") no-repeat center fixed; 
+     -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    z-index:1;
+}
