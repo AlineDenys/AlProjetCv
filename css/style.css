@@ -143,24 +143,23 @@ h3{
 
 
 
-/* SLIDE 2 : REGARDE EN BAS */
+/* URLS PHOTOS EN BACKGROUND */
 #regardeEnBasPhoto {
     background: url("../img/02.jpg") no-repeat center fixed; 
 }
 #regardeEnBasPhoto2 {
     background: url("../img/03.jpg") no-repeat center fixed; 
 }
-
-
-
-
-
-#profilFond {
-    
+#fondParcours {
+    background: url("../img/parcours.jpg") no-repeat center fixed; 
+    display: none;
 }
 
+
+
+
 /* BASE PHOTOS BACKGROUND */ 
-#regardeEnBasPhoto, #regardeEnBasPhoto2 {
+#regardeEnBasPhoto, #regardeEnBasPhoto2, #fondParcours {
     top:0;
     height: 100%;
     width: 100%;
@@ -262,3 +261,27 @@ display: none;
     -webkit-animation-play-state: paused; 
     animation-play-state: paused;
  }
+
+/* SLIDE 3 : PARCOURS */
+#flecheParcours{
+    top: 50px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    background-color: white;
+    width: 100px;
+    margin-left: -50px;
+}
+
+#triangleParcours{
+        top: 0%;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+   width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 50px 50px 50px;
+border-color: transparent transparent #ffffff transparent;
+        margin-left: -50px;
+}

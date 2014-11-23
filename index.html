@@ -42,9 +42,9 @@
           
         </section>
             
-        <section id="profil" data-1100="right:100%;" data-1500="right:0%;">
+        <section id="profil" data-1100="right:100%;" data-1250="right:0%;">
             <!-- BARRE PROFIL -->
-            <div id="profilBarre" data-380="top:115%;opacity:1;" data-900="opacity:1;top:0px;" data-820="top:0px;" data-1000="top:0px;display:inline;opacity:1;" data-1100="top:0%;opacity:0;display:none;" data-anchor-target="#profil" >
+            <div id="profilBarre" data-380="top:110%;opacity:1;" data-900="opacity:1;top:0px;" data-820="top:0px;" data-1000="top:0px;display:inline;opacity:1;" data-1050="top:0%;opacity:0;display:none;" data-anchor-target="#profil" >
             <ul>
                 <li id="famille" onmouseover="affiche('maman');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'maman')"><a href=""><i class="fa fa-male fa-3x"></i><i class="fa fa-female fa-3x"></i><i class="fa fa-child fa-2x"></i></a><div id="pulse"></div></li>
                 <li id="anniv"  onmouseover="affiche('anniversaire');cache(event,'devoile')" onmouseout="affiche('devoile');cache(event,'anniversaire')"><a href=""><i class="fa fa-birthday-cake fa-3x"></i></a><div id="pulse"></div></li>
@@ -55,7 +55,7 @@
             </div>
             
             <!-- FOND PROFIL -->
-            <div id="fondProfil" data-500="top:100%;" data-850="top:0%;" data-1100="background-position:0px 0px;" data-1500="background-position:100px 0px;" data-anchor-target="#profil" >
+            <div id="fondProfil" data-500="top:100%;" data-850="top:0%;" data-anchor-target="#profil" >
                  <!-- TEXTES PROFIL -->            
                 <div id="textesProfil" data-700="opacity:0;top:0%" data-850="opacity:1;top:40%;" data-1100="left:0%;opacity:1;" data-1200="left:100%;opacity:0;" data-anchor-target="#profil">
                     <h2>Je<br/></h2>
@@ -70,13 +70,24 @@
         </section> 
         
         <section id="parcours">
-            <!-- FOND PARCOURS -->
-            
-        </section>
 
+            <!-- FOND PARCOURS -->
+                <div id="fondParcours" data-0="opacity:0;display:none;" data-1090="opacity:0;display:none;" data-1100="display:inline;opacity:1;" data-anchor-target="#parcours" ></div>
+                
+                <div id="flecheParcours" data-0="opacity:0;display:none;" data-1190="height:0%;opacity:0;display:inline;" data-1500="height:100%;opacity:1;" data-anchor-target="#parcours" ><div id="triangleParcours"></div></div>
+                
+                <div id="histoireParcours">
+                    <ul>
+                    <li id="bac"><a href=""><i class="fa fa-graduation-cap fa-3x"></i></a><div id="pulse"></div></li>
+                    
+                    </ul>
+                </div>
+               
+        </section>
     
         
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
     	<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" >
@@ -111,6 +122,7 @@ function isChildOf(child,par) {
   }
   return false;
 }
+        
       </script>
 
     </body>
