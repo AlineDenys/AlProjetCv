@@ -424,7 +424,7 @@ background-color:#fff;
 #photoBarre{
     height: 33%;
     width: 100%;
-    background: url("../img/01.jpg") no-repeat center fixed; 
+    background: url("../img/04.jpg") no-repeat center fixed; 
      -webkit-background-size: cover; /* pour Chrome et Safari */
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */
@@ -433,4 +433,34 @@ background-color:#fff;
     position:fixed;
     bottom:0;
     z-index:1;
+}
+#photo2Barre{background: url("../img/05.jpg") no-repeat center fixed; }
+#photo3Barre{background: url("../img/06.jpg") no-repeat center fixed; }
+#photo4Barre{background: url("../img/07.jpg") no-repeat center fixed; }
+
+#photo2Barre, #photo3Barre,#photo4Barre{
+    height: 100%;
+    width: 100%;
+     -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    z-index:1;
+}
+
+
+/* SLIDE 5 : REFERENCES */
+
+#fondReferences{
+    top:-300%;
+        z-index:2;
+    height: 300%;
+    width: 200%;
+    text-align: center;
+    position:fixed;
+    left:0;
+    background-color: grey;
 }
