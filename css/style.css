@@ -77,25 +77,23 @@ h2 {
         display: inline;
 }
 h3{
-    font-family: 'Clicker Script', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     font-size: 40px;
     font-weight: 0;
     display: inline;
 
 }
 .date{
-    font-family: 'Gloria Hallelujah', sans-serif;
+     font-family: 'Great Vibes', sans-serif;
     color:white;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 /* INFO SCROLLR */
-#info{
+#logo{
     position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
+    top: 10px;
+    left: 10px;
     padding: 20px;
     z-index: 9999;
 }
@@ -612,7 +610,7 @@ background-color:#fff;
 	height: 400px;
 	border-radius: 50%;
 	background: white;
-    font-family: 'Clicker Script', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     font-size: 24px;
 }
 .slide .legend{
@@ -666,6 +664,6 @@ margin-left:-150px;
     position:fixed;
     z-index:3;
     top: 40%;
-    font-family: 'Gloria Hallelujah', sans-serif;
-    font-size: 24px;
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px;
 }
