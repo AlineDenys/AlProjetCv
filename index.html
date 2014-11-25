@@ -156,24 +156,75 @@
             
             <section id="references">
                 <!-- FOND REFERENCES -->
-                <!--  -->
-            <div id="fondReferences"  data-0="display:none;-ms-transform: rotate(0deg);-ms-transform-origin: 0% 0%;-webkit-transform: rotate(0deg);-webkit-transform-origin: 0% 0%;transform: rotate(0deg);transform-origin: 0% 0%;" data-3500="display:block;-ms-transform: rotate(0deg);-ms-transform-origin: 0% 100%;-webkit-transform: rotate(0deg);-webkit-transform-origin: 0% 100%;transform: rotate(0deg);transform-origin: 0% 100%;" data-4000="display:block;-ms-transform: rotate(90deg);-ms-transform-origin: 0% 100%;-webkit-transform: rotate(90deg);-webkit-transform-origin: 0% 100%;transform: rotate(90deg);transform-origin: 0% 100%;" data-anchor-target="#references" ></div>
+                <div id="fondReferences"  data-0="display:none;-ms-transform: rotate(0deg);-ms-transform-origin: 0% 0%;-webkit-transform: rotate(0deg);-webkit-transform-origin: 0% 0%;transform: rotate(0deg);transform-origin: 0% 0%;" data-3500="display:block;-ms-transform: rotate(0deg);-ms-transform-origin: 0% 100%;-webkit-transform: rotate(0deg);-webkit-transform-origin: 0% 100%;transform: rotate(0deg);transform-origin: 0% 100%;" data-4000="display:block;-ms-transform: rotate(90deg);-ms-transform-origin: 0% 100%;-webkit-transform: rotate(90deg);-webkit-transform-origin: 0% 100%;transform: rotate(90deg);transform-origin: 0% 100%;" data-anchor-target="#references" ></div>
+                 <!-- TEXTES REFERENCES -->            
+                <div id="textesReferences" data-0="display:none;" data-4000="opacity:0;display:none;" data-4100="opacity:1;display:block;" data-anchor-target="#references" >
+                   
+                    <!-- SLIDE REFERENCES -->   
+                    <div id="slideshow" class="slideshow">
+				<ul>
+					<li>
+						<div class="slide">
+							<h2>Plus de 20 sites développés</h2>
+				        </div>
+					</li>
+					<li>
+						<div class="slide">
+							<h2>Plus de 20 sites développés</h2>
+				        </div>
+					</li>
+					<li>
+						<div class="slide">
+							<h2>Plus de 20 sites développés</h2>
+				        </div>
+					</li>
+					<li>
+						<div class="slide">
+							<h2>Plus de 20 sites développés</h2>
+				        </div>
+					</li>
+					<li>
+						<div class="slide">
+							<h2>Plus de 20 sites développés</h2>
+				        </div>
+					</li>
+					<li>
+						<div class="slide">
+							<h2>Plus de 20 sites développés</h2>
+				        </div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+    
             </section>
     
-        
+         <!-- JS POUR LE SCROLL -->
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        
-    	<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
         <script type="text/javascript" >
             var s = skrollr.init({
 	        render: function(data) {
-            //Log the current scroll position.
+            //Scroll position
             $('#info').text(data.curTop);
             }
             });
         </script>
-        
+             <!-- JS POUR LE SLIDE -->
+            <script src="js/snap.svg-min.js"></script>
+            <script src="js/modernizr.custom.js"></script>
+            <script src="js/classie.js"></script>
+		<script src="js/sliderFx.js"></script>
+		<script>
+			(function() {
+				new SliderFx( document.getElementById('slideshow'), {
+					easing : 'cubic-bezier(.8,0,.2,1)'
+				} );
+			})();
+		</script>
+            
+           <!-- JS GENERAL -->
         <script>
  $(window).load(function() {
      $("#scroll").fadeIn("slow");
