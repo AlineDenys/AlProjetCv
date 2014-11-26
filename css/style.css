@@ -328,7 +328,7 @@ background-color:#fff;
     left: 0;
     width: 48%;
     background: url("../img/traits.png") no-repeat right top; 
-    top:56%;
+    top:53%;
     padding-left: 50px;
     padding-right: 130px;
     display: none;
@@ -667,7 +667,10 @@ margin-left:-150px;
     font-family: 'Great Vibes', sans-serif;
     font-size: 40px;
 }
-
+#ficheContact a{
+    text-decoration: none;
+    color:#333333;
+}
 
 
 
