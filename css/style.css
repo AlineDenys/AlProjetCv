@@ -697,10 +697,36 @@ margin-left:-150px;
 
 body:after{
     display:none;
-    content: url(../img/01.jpg) url(../img/02.jpg) url(../img/03.jpg) url(../img/04.jpg) url(../img/05.jpg) url(../img/06.jpg) url(../img/07.jpg) url(../img/anniversaire.jpg) url(../img/decines.jpg) url(../img/devoile.jpg) url(../img/dunkerque.jpg) url(../img/maman.jpg) url(../img/nord.jpg) url(../img/parcours.jpg) url(../img/permis.jpg) url(../img/ref/celinefumery.jpg) url(../img/ref/terredeslys.jpg) url(../img/ref/mostlocation.jpg) url(../img/ref/lafermauxchiconnettes.jpg) url(../img/ref/intermaides.jpg) url(../img/ref/filinfodom.jpg) url(../img/ref/alinerie.jpg);
+    content: url(../img/loader.gif) url(../img/01.jpg) url(../img/02.jpg) url(../img/03.jpg) url(../img/04.jpg) url(../img/05.jpg) url(../img/06.jpg) url(../img/07.jpg) url(../img/anniversaire.jpg) url(../img/decines.jpg) url(../img/devoile.jpg) url(../img/dunkerque.jpg) url(../img/maman.jpg) url(../img/nord.jpg) url(../img/parcours.jpg) url(../img/permis.jpg) url(../img/ref/celinefumery.jpg) url(../img/ref/terredeslys.jpg) url(../img/ref/mostlocation.jpg) url(../img/ref/lafermauxchiconnettes.jpg) url(../img/ref/intermaides.jpg) url(../img/ref/filinfodom.jpg) url(../img/ref/alinerie.jpg);
 }
 
 
 
 
+body {
+	overflow: hidden;
+}
 
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/loader.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
